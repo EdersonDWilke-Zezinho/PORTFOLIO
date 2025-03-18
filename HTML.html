@@ -11,28 +11,33 @@
         <a href="home.com" id="home">HOME</a>
 
     </header>
-    <section>
-        <div>
+    <section class="container">
+        <div class="box">
             <img src="eu.png" alt="250" id="imagemeu">
             <h1>EDERSON D. WILKE</h1>
             <h3 id="paragrafosobre">Sou um entusiasta da tecnologia com base em desenvolvimento web, atualmente focado em expandir meus conhecimentos em back‑end e front‑end na linguagem JavaScript.</h3>
-            <divbotao>
-                <button id="linkedin" onmousemove="teste(this)" onmouseout="fimteste()">Acesse aqui o meu LINKEDIN!</button>
-            </divbotao>
-            <divbotao>
-                <p  id="github">Acesse aqui o meu GITHUB!</p>
-            </divbotao>
-            <divbotao>
-                <p id="contato">Entre em contato comigo!</p>
-            </divbotao>
+            <div3 class="buttons"style='position:absolute;margin-left:10px;margin-top:10px;width:300px;height:140px;z-index:1; padding: 5px;'>
+                <button id="linkedin" onmouseout="fimtestelinkedin();" onmousemove="testelinkedin();"onclick="acessarlinkedin()"; style="padding-top: 10px;";>Acesse aqui o meu LINKEDIN!</button>
+
+                <button  id="github" onmousemove="testegithub();" onmouseout="fimtestegithub();" onclick="acessargithub()"; style="padding-top: 10px;">Acesse aqui o meu GITHUB!</button>
+
+                <button id="contato" onmousemove="testecontato();" onmouseout="fimtestecontato();" onclick="acessarcontato()"; style="padding-top: 10px;">Entre em contato COMIGO!</button>
+            </div3>
         </div>
-        <divprojetos>
-            <option value="projetos" id="projetos">Projetos</option>
-        </divprojetos>
-    <footer>
+        <div class="box" class="roleta-container">
+            <div class="roleta-texto" id="roleta">
+                <a href="https://projeto1.com"><h1>Projetos</h1></a>
+                <a href="https://projeto2.com"><h1>Projetosmaior</h1></a>
+                <a href="https://projeto3.com"><h1>Projet</h1></a>
+                <a href="https://projeto4.com"><h1>Pro</h1></a>
+                <a href="https://projeto5.com"><h1>megaProjetaozao</h1></a>
+            </div>
+        </div>
+    </section>
+    <footer style="position:fixed; bottom:0px;text-align: center;"
+    bottom:0px;>
         <p>© 2025 Ederson Wilke</p>
     </footer>
-    </section>
     <script src="JAVASCRIPT.js"></script>
 </body>
 </html>

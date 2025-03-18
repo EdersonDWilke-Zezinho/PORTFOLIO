@@ -17,7 +17,7 @@ img{
 h3{
     padding-right: 20px;
     padding-left: 40px;
-    width: 500px;
+    width: 480px;
     font-family: cursive;
     text-justify: auto;
   
@@ -26,8 +26,56 @@ h1{
     padding-left: 40px;
 }
 a{
-    color: rgb(255, 255, 255);
+    color: rgb(0, 158, 87);
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size:x-large;
     padding-left: 40px;
+}
+.container {
+    display: flex; /* Ativa o flexbox */
+    justify-content: space-between; /* Espaçamento entre as divs */
+    gap: 10px; /* Espaço entre as divs */
+}
+.box {
+    padding: 20px;
+    padding-right: 50px;
+    border: 1px solid rgb(0, 0, 0);
+    width: 2500px; /* Define um tamanho fixo */
+    text-align: justify;
+    
+}
+/* Container da roleta */
+.roleta-container {
+    width: 400px;
+    height: 100px;
+    overflow: hidden;
+    position: relative;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Lista de textos */
+.roleta-texto {
+    display: flex;
+    flex-direction: column; /* Mantém os itens na vertical */
+    position: absolute;
+    transition: transform 0.3s ease-out; /* Suaviza o movimento */
+}
+
+/* Links dentro da roleta */
+.roleta-texto a {
+    display: block;
+    font-size: 60px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 10px;
+    transition: color 0.2s;
+}
+
+/* Efeito ao passar o mouse */
+.roleta-texto a:hover {
+    color: green;
 }
